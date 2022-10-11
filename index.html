@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+
+
+  <title>Menu Active</title>
+
+  <ul class="nav-bar" id="navbar">
+
+
+
+    <li class="active">
+      <a href="#" class="nav-link" to="/index.html">
+        <i class='bx bx-home'></i>
+        <span class="custom-font-aside">Home</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" to="/painel-minhas-vendas">
+        <i class='bx bx-line-chart'></i>
+        <span class="custom-font-aside">Minhas vendas</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" to="/painel-acervo-divulgacao">
+        <i class='bx bxs-videos'></i>
+        <span class="custom-font-aside">Aprenda Agora</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" to="/painel-acervo-divulgacao">
+        <i class='bx bx-pie-chart-alt-2'></i>
+        <span class="custom-font-aside">Estratégias</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" to="/painel-acervo-divulgacao">
+        <i class='bx bx-images'></i>
+        <span class="custom-font-aside">Galeria Imagens</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="#" class="nav-link" to="/painel-acervo-divulgacao">
+        <i class='bx bx-money'></i>
+        <span class="custom-font-aside">Extrato</span>
+      </a>
+    </li>
+
+    <li class="icons">
+      <i class='bx bxs-heart'></i>
+      <i class='bx bx-cart-alt'></i>
+      <i class='bx bxs-bell-ring'></i>
+      <i class='bx bx-user-circle'></i>
+    </li>
+
+  </ul>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('li').on('click', function () {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+      })
+    })
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="container-cards">
+
+      <div class="card">
+        <div class="icon"> <i class='bx bx-user-circle'></i> </div>
+        <div class="link"> <a href="#"></a> </div>
+        <div class="texto"> <span>Usuário</span> </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"> <i class='bx bxs-heart'></i> </div>
+        <div class="link"> <a href="#"></a> </div>
+        <div class="texto"> <span>Favoritos</span> </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"> <i class='bx bxs-bell-ring'></i> </div>
+        <div class="link"> <a href="#"></a> </div>
+        <div class="texto"> <span>Notificações</span> </div>
+      </div>
+
+      <div class="card">
+        <div class="icon"> <i class='bx bx-cart-alt'></i> </div>
+        <div class="link"> <a href="#"></a> </div>
+        <div class="texto"> <span>Carrinho</span> </div>
+      </div>
+            
+    </div>
+
+  </div>
+
+</body>
+
+</html>
